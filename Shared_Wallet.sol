@@ -18,4 +18,5 @@ contract simpleWallet is Allowance{
     fallback () external payable {
     emit BalanceChanged(_msgSender(),msg.value);
     }
+    receive() external payable {}
 }
